@@ -12,7 +12,7 @@ const IceCreamSchema = new mongoose.Schema({
     required: true
   },
   customer_rating: {
-    type: Number,
+    type: String,
     required: true
   },
   
