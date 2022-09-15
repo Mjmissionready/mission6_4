@@ -22,4 +22,4 @@ const IceCreamSchema = new mongoose.Schema({
 //   }
 });
 
-module.exports = iceCream = mongoose.model('iceCream', IceCreamSchema);
+module.exports = iceCream = mongoose.model('icecreams', IceCreamSchema);
