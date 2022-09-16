@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
 const config = require('config');
-const db = config.get('mongoURI');
+// const db = config.get('mongoURI');
 
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      db,
-      {
+      "mongodb+srv://Minju:MissionReadyLevel5@missionready.qydpjji.mongodb.net/Mission-6A",
+       {
         useNewUrlParser: true
       }
+
     );
 
     console.log('HOOORRRAAAAAAYYYYYYY!!!!');
