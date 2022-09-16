@@ -1,0 +1,115 @@
+.wrapper {
+  position: absolute;
+  padding: 10px 50px;
+  width: 100%;
+  font-family: "Quicksand";
+  font-weight: 800;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: transparent;
+
+}
+
+.brand-name {
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-left: 0.8rem;
+  color: #c53075;
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-menu li a:hover {
+  color: #b71234;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #663b0f;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #0076be;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.hamburger:hover {
+  background-color: #0076be;
+}
+
+@media screen and (max-width: 550px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigation-menu li a {
+    color: #663b0f;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .navigation-menu li:hover {
+    background-color: #d3d3d3;
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+
+#login-navbar {
+  background-color: inherit;
+  width: 70px;
+  height: 25px;
+  border: 1px solid;
+  color: #0076be;
+}
