@@ -5,10 +5,11 @@ const config = require('config');
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://mjyoon:mjyoon@cluster0.3iesq6d.mongodb.net/mission6",
-      {
-        useNewUrlparser: true
+      "mongodb+srv://Minju:MissionReadyLevel5@missionready.qydpjji.mongodb.net/Mission-6A",
+       {
+        useNewUrlParser: true
       }
+
     );
 
     console.log('HOOORRRAAAAAAYYYYYYY!!!!');

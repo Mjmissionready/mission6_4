@@ -3,23 +3,30 @@
 const mongoose = require('mongoose');
 
 const IceCreamSchema = new mongoose.Schema({
-  name: {
+  flavor: {
     type: String,
     required: true
   },
+
   description: {
     type: String,
     required: true
   },
+
   customer_rating: {
     type: String,
     required: true
   },
   
-//   updated_date: {
-//     type: Date,
-//     default: Date.now
-//   }
+  price: {
+    type: String,
+    required: true
+  },
+
+  //   updated_date: {
+  //     type: Date,
+  //     default: Date.now
+  //   }
 });
 
-module.exports = iceCream = mongoose.model('icecreams', IceCreamSchema);
+module.exports = iceCream = mongoose.model('iceCream', IceCreamSchema);

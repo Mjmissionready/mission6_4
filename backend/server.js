@@ -9,12 +9,10 @@ connectDB();
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ extended: false }));
 
-const icecreams = require('./routes/api/iceCreams.js');
-app.get('/', (req, res) => res.send('Hello world!'));
-// app.get('/', (req, res) => res.send('Hello world!'));
+const icecream = require('./routes/api/iceCreams.js');
+app.get('/', (req, res) => res.send('Welcome to monodb API!'));
 
-
-app.use('/api/icecreams', icecreams);
+app.use('/api', icecream);
 
 const port = process.env.PORT || 8080;
 
